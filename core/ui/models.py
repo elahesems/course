@@ -10,3 +10,8 @@ class Home(models.Model):
         return self.title
     class Meta:
         verbose_name_plural = "Home"
+class SocialLinks(models.Model):
+    twitter = models.URLField()
+    facebook = models.URLField()
+    linkedin = models.URLField()
+    instagram = models.URLField()

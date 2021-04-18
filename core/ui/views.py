@@ -4,7 +4,7 @@ from django.shortcuts import render
 from ui.models import Home
 
 
-def home (request) :
+def home(request):
     home = Home.objects.all()
-    context = {'home':home}
+    context = {'home': home}
     return render(request, 'index.html', context)
