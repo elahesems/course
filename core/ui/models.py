@@ -15,3 +15,5 @@ class SocialLinks(models.Model):
     facebook = models.URLField()
     linkedin = models.URLField()
     instagram = models.URLField()
+    class Meta:
+        verbose_name_plural = "SocialLinks"
