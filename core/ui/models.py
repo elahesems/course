@@ -1,10 +1,10 @@
 from django.db import models
-
+from djrichtextfield.models import RichTextField
 # Create your models here.
 
 class Home(models.Model):
     picture = models.ImageField()
-    title = models.CharField(max_length=600, null=True, blank=True)
+    title = RichTextField(null=True, blank=True)
     button = models.URLField()
     def __str__(self):
         return self.title
